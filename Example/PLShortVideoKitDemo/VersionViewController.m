@@ -8,6 +8,7 @@
 
 #import "VersionViewController.h"
 #import "PLShortVideoKit/PLShortVideoKit.h"
+#import <PLSEffect/PLSEVersionInfo.h>
 
 @interface VersionViewController ()
 
@@ -23,11 +24,13 @@
     NSString *bundleId = [infoDict objectForKey:@"CFBundleIdentifier"];
     NSString *demoBuildNumber = [infoDict objectForKey:@"CFBundleVersion"];
     NSString *sdkVersion = [PLShortVideoRecorder versionInfo];
+    NSString *effectVersion = [PLSEVersionInfo versionInfo];
     
     NSString *texts[] = {
         [NSString stringWithFormat:@"BundleID: %@", bundleId],
         [NSString stringWithFormat:@"Demo version: %@", demoBuildNumber],
-        [NSString stringWithFormat:@"SDK version: %@", sdkVersion]
+        [NSString stringWithFormat:@"SDK version: %@", sdkVersion],
+        [NSString stringWithFormat:@"Effect version: %@", effectVersion]
     };
     for (int i = 0; i < ARRAY_SIZE(texts); i ++) {
         UILabel *versionLabel = [[UILabel alloc] init];

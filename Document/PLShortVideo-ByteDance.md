@@ -58,16 +58,6 @@ pod 'PLShortVideo-ByteDance', :podspec => 'https://raw.githubusercontent.com/pil
 end
 ```
 
-#### Warnings
-
-**在使用了七牛的推流或连麦 SDK 的工程中，集成该短视频 SDK 会出现美颜库导致的符号冲突问题 duplicate symbol _OBJC_CLASS_ MuseProcessor，解决方法如下**
-
-```ruby
-target 'TargetName' do
-pod 'PLShortVideoKit/ex-libMuseProcessor'
-end
-```
-
 然后，运行如下的命令：
 
 ```bash

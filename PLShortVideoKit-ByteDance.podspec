@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint PLShortVideoKit.podspec' to ensure this is a
+#  Be sure to run `pod spec lint PLShortVideoKit-ByteDance.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -8,13 +8,14 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "PLShortVideoKit"
-  s.version      = "3.1.1"
+  s.name         = "PLShortVideoKit-ByteDance"
+  s.version      = "1.0.0"
   s.summary      = "PILI iOS short video record SDK"
-  s.homepage     = "https://github.com/pili-engineering/PLShortVideoKit"
+  s.homepage     = "https://github.com/pili-engineering/PLShortVideoKit-ByteDance"
   s.license      = "Apache License 2.0"
   s.author       = { "pili" => "pili@qiniu.com" }
-  s.source       = { :http => "https://sdk-release.qnsdk.com/PLShortVideoKit-profession-v3.1.1.zip"}
+  s.source       = { :git => "https://github.com/pili-engineering/PLShortVideoKit-ByteDance.git", :tag => "#{s.version}"}
+  s.source_files  = "Release/**"
   s.platform     = :ios
   s.requires_arc = true
 
@@ -24,12 +25,12 @@ Pod::Spec.new do |s|
 
 
   s.subspec "ex-libMuseProcessor" do |ss1|
-    ss1.vendored_framework		= "Pod/Library/Profession/PLShortVideoKit.framework"
+    ss1.vendored_frameworks		= 'Release/*.framework'
   end
 
 
   s.subspec "libMuseProcessor" do |ss2|
-    ss2.vendored_libraries		= 'Pod/Library/Profession/*.a'
+    ss2.vendored_libraries		= 'Release/*.a'
   end
 
 end

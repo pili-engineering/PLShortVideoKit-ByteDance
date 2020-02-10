@@ -89,11 +89,7 @@
  @param pixelBuffer 视频帧数据
  @param timingInfo 采样时间信息
  
-<<<<<<< HEAD
- @since      v3.2.0
-=======
  @since      v3.1.1
->>>>>>> master
  */
 - (CVPixelBufferRef __nonnull)shortVideoRecorder:(PLShortVideoRecorder *__nonnull)recorder cameraSourceDidGetPixelBuffer:(CVPixelBufferRef __nonnull)pixelBuffer timingInfo:(CMSampleTimingInfo)timingInfo;
 

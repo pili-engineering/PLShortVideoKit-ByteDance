@@ -1,6 +1,6 @@
 
 # 1 概述
-PLShortVideo-ByteDance 是七牛推出的一款适用于 iOS 平台的具有高级特效功能的短视频 SDK，提供了包括高级美颜、高级滤镜、动态贴纸、水印、断点录制、分段回删、视频编辑、混音特效、本地/云端存储在内的多种功能，支持高度定制以及二次开发。
+PLShortVideoKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具有高级特效功能的短视频 SDK，提供了包括高级美颜、高级滤镜、动态贴纸、水印、断点录制、分段回删、视频编辑、混音特效、本地/云端存储在内的多种功能，支持高度定制以及二次开发。
 
 # 2 阅读对象
 
@@ -11,7 +11,7 @@ PLShortVideo-ByteDance 是七牛推出的一款适用于 iOS 平台的具有高�
 
 # 3 总体设计
 
-本产品由PLEffect和PLShortVideo两部分组成，本文档将介绍特效部分的开发接入，PLSortVideoKit 开发文档请参考**[PLShortVideoKit 文档](https://developer.qiniu.com/pili/sdk/3733/short-video-ios-sdk)**
+本产品由PLEffect和PLShortVideoKit两部分组成，本文档将介绍特效部分的开发接入，PLSortVideoKit 开发文档请参考**[PLShortVideoKit 文档](https://developer.qiniu.com/pili/sdk/3733/short-video-ios-sdk)**
 
 
 ## 3.1 基本规则
@@ -50,11 +50,11 @@ PLShortVideo-ByteDance 是七牛推出的一款适用于 iOS 平台的具有高�
 
 ### Podfile
 
-为了使用 CoacoaPods 集成 PLShortVideo-ByteDance 到你的 Xcode 工程当中，你需要编写你的 `Podfile`
+为了使用 CoacoaPods 集成 PLShortVideoKit-ByteDance 到你的 Xcode 工程当中，你需要编写你的 `Podfile`
 
 ```ruby
 target 'TargetName' do
-pod 'PLShortVideo-ByteDance', :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLShortVideo-ByteDance/master/PLShortVideo-ByteDance.podspec'
+pod 'PLShortVideoKit-ByteDance', :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLShortVideoKit-ByteDance/master/PLShortVideoKit-ByteDance.podspec'
 end
 ```
 

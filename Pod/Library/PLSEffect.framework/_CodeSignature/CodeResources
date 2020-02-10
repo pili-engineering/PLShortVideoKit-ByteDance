@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/PLSEVersionInfo.h</key>
+		<data>
+		8+Vd/8+zsJ0LEIf/HBNoBmlYc3Y=
+		</data>
 		<key>Headers/PLSEffect.h</key>
 		<data>
 		TfTMu8szjIZdPlomxpFw9kke1Wc=
@@ -39,6 +43,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/PLSEVersionInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8+Vd/8+zsJ0LEIf/HBNoBmlYc3Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			n7w7Fbv7NIN3exUxjmc7bX/pPozFmiFAbT4nYxaCoQs=
+			</data>
+		</dict>
 		<key>Headers/PLSEffect.h</key>
 		<dict>
 			<key>hash</key>

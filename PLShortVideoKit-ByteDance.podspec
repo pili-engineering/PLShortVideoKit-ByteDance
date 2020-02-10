@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license      = "Apache License 2.0"
   s.author       = { "pili" => "pili@qiniu.com" }
   s.source       = { :git => "https://github.com/pili-engineering/PLShortVideoKit-ByteDance.git", :tag => "#{s.version}"}
-  s.source_files  = "Release/**"
+  s.source_files  = "Pod/Library/**"
   s.platform     = :ios
   s.requires_arc = true
 
@@ -25,12 +25,12 @@ Pod::Spec.new do |s|
 
 
   s.subspec "ex-libMuseProcessor" do |ss1|
-    ss1.vendored_frameworks		= 'Release/*.framework'
+    ss1.vendored_frameworks		= 'Pod/Library/*.framework'
   end
 
 
   s.subspec "libMuseProcessor" do |ss2|
-    ss2.vendored_libraries		= 'Release/*.a'
+    ss2.vendored_libraries		= 'Pod/Library/*.a'
   end
 
 end

@@ -1,0 +1,36 @@
+{
+    "beauty":[
+        {
+            "path":"beauty_IOS",
+            "displayName":"锐化",
+            "internalKey":"sharp",
+            "intensity":1.0
+        },
+        {
+            "path":"beauty_IOS",
+            "displayName":"磨皮",
+            "internalKey":"smooth",
+            "intensity":1.0
+        },
+        {
+            "path":"beauty_IOS",
+            "displayName":"美白",
+            "internalKey":"whiten",
+            "intensity":1.0
+        }
+    ],
+    "reshape":[
+        {
+            "path":"reshape",
+            "displayName":"瘦脸",
+            "internalKey":"Internal_Deform_Overall",
+            "intensity":1.0
+        },
+        {
+            "path":"reshape",
+            "displayName":"大眼",
+            "internalKey":"Internal_Deform_Eye",
+            "intensity":1.0
+        }
+    ]
+}

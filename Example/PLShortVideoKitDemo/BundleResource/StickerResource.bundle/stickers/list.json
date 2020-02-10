@@ -1,0 +1,22 @@
+[
+    {
+        "path":"bawanglong",
+        "displayName":"霸王龙",
+        "tip":""
+    },
+    {
+        "path":"katongnan",
+        "displayName":"卡通男",
+        "tip":""
+    },
+    {
+        "path":"katongnv",
+        "displayName":"卡通女",
+        "tip":""
+    },
+    {
+        "path":"zhuluoji",
+        "displayName":"侏罗纪",
+        "tip":""
+    }
+]

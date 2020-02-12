@@ -2,6 +2,10 @@
 
 PLShortVideoKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具有高级特效功能的短视频 SDK，提供了包括高级美颜、高级滤镜、动态贴纸、水印、断点录制、分段回删、视频编辑、混音特效、本地/云端存储在内的多种功能，支持高度定制以及二次开发。PLShortVideKit 功能请参考***[PLShortVideKit](https://github.com/pili-engineering/PLShortVideoKit/blob/master/README.md)***
 
+Demo下载:
+
+![QRCode](Document/images/qrcode.png)
+
 ## 1 功能介绍
 
 此款 SDK 包含七牛短视频中所有功能，并额外提供高级美颜、高级美型、高级滤镜和动态贴纸。具有效果自然、强度可调、配置灵活、适应各种光照场景、GPU 上实时渲染、毫秒级响应等优势，基于领先的人脸关键点检测技术，支持多人脸检测，且贴合各种脸型。

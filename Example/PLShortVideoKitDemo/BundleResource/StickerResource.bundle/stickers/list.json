@@ -1,22 +1,102 @@
 [
     {
-        "path":"bawanglong",
-        "displayName":"霸王龙",
-        "tip":""
+        "displayName": "招财猫",
+        "tip": "",
+        "path": "zhaocaimao"
     },
     {
-        "path":"katongnan",
-        "displayName":"卡通男",
-        "tip":""
+        "displayName": "表白七夕",
+        "tip": "比心试试",
+        "path": "biaobaiqixi"
     },
     {
-        "path":"katongnv",
-        "displayName":"卡通女",
-        "tip":""
+        "displayName": "绅士",
+        "tip": "",
+        "path": "shenshi"
     },
     {
-        "path":"zhuluoji",
-        "displayName":"侏罗纪",
-        "tip":""
+        "displayName": "恐龙测试",
+        "tip": "眨眼试试",
+        "path": "konglongceshi"
+    },
+    {
+        "displayName": "南瓜滚滚",
+        "tip": "",
+        "path": "nanguagungun"
+    },
+    {
+        "displayName": "极简兔耳",
+        "tip": "",
+        "path": "jijiantuer"
+    },
+    {
+        "displayName": "假面",
+        "tip": "挡脸换面具",
+        "path": "jiamian"
+    },
+    {
+        "displayName": "公主面具",
+        "tip": "",
+        "path": "gongzhumianju"
+    },
+    {
+        "displayName": "恐龙时光机",
+        "tip": "点头",
+        "path": "konglongshiguangji"
+    },
+    {
+        "displayName": "唤龙术",
+        "tip": "先抬头后张嘴",
+        "path": "huanlongshu"
+    },
+    {
+        "displayName": "好奇龙宝",
+        "tip": "比ok手势",
+        "path": "haoqilongbao"
+    },
+    {
+        "displayName": "暖暖斗篷",
+        "tip": "嘟嘴",
+        "path": "nuannuandoupeng"
+    },
+    {
+        "displayName": "侏罗纪冒险",
+        "tip": "摇头变身不同恐龙",
+        "path": "zhuluojimaoxian"
+    },
+    {
+        "displayName": "我超甜",
+        "tip": "",
+        "path": "wochaotian"
+    },
+    {
+        "displayName": "哈气",
+        "tip": "哈气试试",
+        "path": "haqi"
+    },
+    {
+        "displayName": "卡通男",
+        "tip": "",
+        "path": "katongnan"
+    },
+    {
+        "displayName": "蔚蓝冬日妆",
+        "tip": "眨眼嘟嘴",
+        "path": "weilandongrizhuang"
+    },
+    {
+        "displayName": "黑猫眼镜",
+        "tip": "",
+        "path": "heimaoyanjing"
+    },
+    {
+        "displayName": "蕾丝兔耳",
+        "tip": "",
+        "path": "leisituer"
+    },
+    {
+        "displayName": "卡通女",
+        "tip": "",
+        "path": "katongnv"
     }
 ]

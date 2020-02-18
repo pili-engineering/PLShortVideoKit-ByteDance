@@ -1,0 +1,5 @@
+Example/PLShortVideoKitDemo.xcworkspace/
+Example/Podfile.lock
+Example/Pods/
+**/xcuserdata
+**/.DS_Store

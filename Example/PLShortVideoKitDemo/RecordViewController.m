@@ -208,7 +208,7 @@ UIGestureRecognizerDelegate
     NSString *rootPath = [[NSBundle mainBundle] resourcePath];
     PLSEffectConfiguration *effectConfiguration = [PLSEffectConfiguration new];
     effectConfiguration.modelFileDirPath = [NSString pathWithComponents:@[rootPath, @"ModelResource.bundle"]];
-    effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"qiniu_20200214_20210213_com.qbox.PLShortVideoKitDemo_qiniu_v3.4.2.licbag"]];
+    effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"qiniu_20200214_20210213_com.qbox.PLShortVideoKit.ByteDance.Demo_qiniu_v3.4.2.licbag"]];
     _effectDataManager = [[PLSEffectDataManager alloc] initWithRootPath:rootPath];
     
     self.effectManager = [PLSEffectManager sharedWith:[[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2] configuration:effectConfiguration];
@@ -300,14 +300,25 @@ UIGestureRecognizerDelegate
     return _effectListView;
 }
 
+- (BOOL)isiPhoneX {
+    if (@available(iOS 11.0, *)) {
+        if(UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom > 0) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 - (void)setupBaseToolboxView {
     UIView *topToolView = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 176, 35)];
     topToolView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:topToolView];
     
+    NSInteger top = [self isiPhoneX] ? 44 : 0;
+    
     // 返回
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    backButton.frame = CGRectMake(0, 0, 35, 35);
+    backButton.frame = CGRectMake(0, top, 35, 35);
     backButton.imageEdgeInsets = UIEdgeInsetsMake(2, 2, 2, 2);
     [backButton setImage:[UIImage imageNamed:@"close_back"] forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(backButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -315,14 +326,14 @@ UIGestureRecognizerDelegate
     
     // 截图
     self.snapshotButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.snapshotButton.frame = CGRectMake(47, 0, 35, 35);
+    self.snapshotButton.frame = CGRectMake(47, top, 35, 35);
     [self.snapshotButton setImage:[UIImage imageNamed:@"screen_shoots"] forState:UIControlStateNormal];
     [self.snapshotButton addTarget:self action:@selector(snapshotButtonOnClick:) forControlEvents:UIControlEventTouchUpInside];
     [topToolView addSubview:_snapshotButton];
     
     // 切换摄像头
     UIButton *toggleCameraButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    toggleCameraButton.frame = CGRectMake(47 * 2, 0, 35, 35);
+    toggleCameraButton.frame = CGRectMake(47 * 2, top, 35, 35);
     toggleCameraButton.imageEdgeInsets = UIEdgeInsetsMake(1, 1, 1, 1);
     [toggleCameraButton setImage:[UIImage imageNamed:@"toggle_camera"] forState:UIControlStateNormal];
     [toggleCameraButton addTarget:self action:@selector(toggleCameraButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -330,7 +341,7 @@ UIGestureRecognizerDelegate
     
     // 闪光灯
     UIButton *flashButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    flashButton.frame = CGRectMake(47 * 3, 0, 35, 35);
+    flashButton.frame = CGRectMake(47 * 3, top, 35, 35);
     flashButton.imageEdgeInsets = UIEdgeInsetsMake(2, 2, 2, 2);
     [flashButton setImage:[UIImage imageNamed:@"flash_close"] forState:UIControlStateNormal];
     [flashButton setImage:[UIImage imageNamed:@"flash_open"] forState:UIControlStateSelected];
@@ -341,9 +352,10 @@ UIGestureRecognizerDelegate
     leftToolView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:leftToolView];
     
+    NSInteger index = 0;
     // 美颜
     UIButton *beautyFaceButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    beautyFaceButton.frame = CGRectMake(0, 0, 72, 28);
+    beautyFaceButton.frame = CGRectMake(0, top + 40 * index, 72, 28);
     [beautyFaceButton setTitle:@"美颜: 关" forState:UIControlStateNormal];
     [beautyFaceButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [beautyFaceButton setTitle:@"美颜: 开" forState:UIControlStateSelected];
@@ -353,20 +365,22 @@ UIGestureRecognizerDelegate
     [beautyFaceButton addTarget:self action:@selector(beautyFaceButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
     [leftToolView addSubview:beautyFaceButton];
     beautyFaceButton.selected = NO;
+    index ++;
     
     // 七牛滤镜
     self.filterButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.filterButton.frame = CGRectMake(0, 40, 72, 28);
+    self.filterButton.frame = CGRectMake(0, top + 40 * index, 72, 28);
     [self.filterButton setTitle:@"滤镜: 原色" forState:UIControlStateNormal];
     [self.filterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.filterButton.titleLabel.font = [UIFont systemFontOfSize:14];
     [self.filterButton sizeToFit];
     [self.filterButton addTarget:self action:@selector(filterButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
     [leftToolView addSubview:self.filterButton];
+    index ++;
     
     //是否开启 SDK 退到后台监听
     self.monitorButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.monitorButton.frame = CGRectMake(0, 80, 72, 28);
+    self.monitorButton.frame = CGRectMake(0, top + 40 * index, 72, 28);
     [self.monitorButton setTitle:@"监听: 关" forState:UIControlStateNormal];
     [self.monitorButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.monitorButton setTitle:@"监听: 开" forState:UIControlStateSelected];
@@ -376,10 +390,11 @@ UIGestureRecognizerDelegate
     [self.monitorButton addTarget:self action:@selector(monitorButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
     [leftToolView addSubview:self.monitorButton];
     self.monitorButton.selected = NO;
+    index ++;
     
     // 30FPS/60FPS
     self.frameRateButton =  [[UIButton alloc] init];
-    self.frameRateButton.frame = CGRectMake(0, 120, 72, 28);
+    self.frameRateButton.frame = CGRectMake(0, top + 40 * index, 72, 28);
     [self.frameRateButton setTitle:@"帧率: 30" forState:(UIControlStateNormal)];
     [self.frameRateButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.frameRateButton setTitle:@"帧率: 60" forState:(UIControlStateSelected)];
@@ -388,10 +403,11 @@ UIGestureRecognizerDelegate
     [self.frameRateButton sizeToFit];
     [self.frameRateButton addTarget:self action:@selector(frameRateButtonOnClick:) forControlEvents:UIControlEventTouchUpInside];
     [leftToolView addSubview:self.frameRateButton];
+    index ++;
     
     // 全屏／正方形录制模式
     self.squareRecordButton = [[UIButton alloc] init];
-    self.squareRecordButton.frame = CGRectMake(0, 160, 72, 28);
+    self.squareRecordButton.frame = CGRectMake(0, top + 40 * index, 72, 28);
     [self.squareRecordButton setTitle:@"屏比: 全屏" forState:UIControlStateNormal];
     [self.squareRecordButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.squareRecordButton setTitle:@"屏比: 1:1" forState:UIControlStateSelected];
@@ -401,10 +417,11 @@ UIGestureRecognizerDelegate
     [self.squareRecordButton addTarget:self action:@selector(squareRecordButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
     [leftToolView addSubview:self.squareRecordButton];
     self.squareRecordButton.selected = NO;
+    index ++;
     
     // 录制的视频文件的存储路径设置
     self.filePathButton = [[UIButton alloc] init];
-    self.filePathButton.frame = CGRectMake(0, 200, 72, 28);
+    self.filePathButton.frame = CGRectMake(0, top + 40 * index, 72, 28);
     [self.filePathButton setTitle:@"目录: 开" forState:UIControlStateNormal];
     [self.filePathButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.filePathButton setTitle:@"目录: 关" forState:UIControlStateSelected];
@@ -415,6 +432,7 @@ UIGestureRecognizerDelegate
     [leftToolView addSubview:self.filePathButton];
     self.filePathButton.selected = NO;
     self.useSDKInternalPath = YES;
+    index ++;
 
     
     // 展示拼接视频的动画
@@ -437,9 +455,11 @@ UIGestureRecognizerDelegate
     
     UIColor *backgroundColor = [UIColor whiteColor];
     
+    NSInteger top = [self isiPhoneX] ? 64 : 20;
+    
     int index = 0;
     // 加载草稿视频
-    self.draftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, index * 46 + 20, 46, 32)];
+    self.draftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, index * 46 + top, 46, 32)];
     self.draftButton.layer.cornerRadius = 3;
     self.draftButton.backgroundColor = backgroundColor;
     [self.draftButton setTitle:@"片段" forState:UIControlStateNormal];
@@ -450,7 +470,7 @@ UIGestureRecognizerDelegate
     
     index ++;
     // 是否使用背景音乐
-    self.musicButton = [[UIButton alloc] initWithFrame:CGRectMake(0, index * 46 + 20, 46, 32)];
+    self.musicButton = [[UIButton alloc] initWithFrame:CGRectMake(0, index * 46 + top, 46, 32)];
     self.musicButton.layer.cornerRadius = 3;
     self.musicButton.backgroundColor = backgroundColor;
     [self.musicButton setTitle:@"音乐" forState:UIControlStateNormal];
@@ -462,7 +482,7 @@ UIGestureRecognizerDelegate
     
     index ++;
     // 特效按钮
-    self.effectButton = [[UIButton alloc] initWithFrame:CGRectMake(0, index * 46 + 20, 46, 32)];
+    self.effectButton = [[UIButton alloc] initWithFrame:CGRectMake(0, index * 46 + top, 46, 32)];
     self.effectButton.layer.cornerRadius = 3;
     [self.effectButton setImage:[UIImage imageNamed:@"icon_effect"] forState:UIControlStateNormal];
     self.effectButton.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -473,7 +493,7 @@ UIGestureRecognizerDelegate
     
     index ++;
     // 贴纸按钮
-    self.stickerButton = [[UIButton alloc] initWithFrame:CGRectMake(0, index * 46 + 20, 46, 32)];
+    self.stickerButton = [[UIButton alloc] initWithFrame:CGRectMake(0, index * 46 + top, 46, 32)];
     self.stickerButton.layer.cornerRadius = 3;
     [self.stickerButton setImage:[UIImage imageNamed:@"icon_sticker"] forState:UIControlStateNormal];
     self.stickerButton.titleLabel.font = [UIFont systemFontOfSize:14];

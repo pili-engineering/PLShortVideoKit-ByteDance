@@ -1,102 +1,102 @@
 [
     {
-        "path": "zhaocaimao", 
-        "dispalyName": "招财猫", 
-        "tip": ""
-    }, 
+        "displayName": "招财猫",
+        "tip": "",
+        "path": "zhaocaimao"
+    },
     {
-        "path": "biaobaiqixi", 
-        "dispalyName": "表白七夕", 
-        "tip": ""
-    }, 
+        "displayName": "表白七夕",
+        "tip": "比心试试",
+        "path": "biaobaiqixi"
+    },
     {
-        "path": "shenshi", 
-        "dispalyName": "绅士", 
-        "tip": ""
-    }, 
+        "displayName": "绅士",
+        "tip": "",
+        "path": "shenshi"
+    },
     {
-        "path": "konglongceshi", 
-        "dispalyName": "恐龙", 
-        "tip": ""
-    }, 
+        "displayName": "恐龙测试",
+        "tip": "眨眼试试",
+        "path": "konglongceshi"
+    },
     {
-        "path": "nanguagungun", 
-        "dispalyName": "南瓜滚滚", 
-        "tip": ""
-    }, 
+        "displayName": "南瓜滚滚",
+        "tip": "",
+        "path": "nanguagungun"
+    },
     {
-        "path": "jijiantuer", 
-        "dispalyName": "极简兔儿", 
-        "tip": ""
-    }, 
+        "displayName": "极简兔耳",
+        "tip": "",
+        "path": "jijiantuer"
+    },
     {
-        "path": "jiamian", 
-        "dispalyName": "假面", 
-        "tip": ""
-    }, 
+        "displayName": "假面",
+        "tip": "挡脸换面具",
+        "path": "jiamian"
+    },
     {
-        "path": "gongzhumianju", 
-        "dispalyName": "公主面具", 
-        "tip": ""
-    }, 
+        "displayName": "公主面具",
+        "tip": "",
+        "path": "gongzhumianju"
+    },
     {
-        "path": "konglongshiguangji", 
-        "dispalyName": "恐龙时光机", 
-        "tip": ""
-    }, 
+        "displayName": "恐龙时光机",
+        "tip": "点头",
+        "path": "konglongshiguangji"
+    },
     {
-        "path": "huanlongshu", 
-        "dispalyName": "唤龙术", 
-        "tip": "张嘴试试"
-    }, 
+        "displayName": "唤龙术",
+        "tip": "先抬头后张嘴",
+        "path": "huanlongshu"
+    },
     {
-        "path": "haoqilongbao", 
-        "dispalyName": "好奇龙猫", 
-        "tip": ""
-    }, 
+        "displayName": "好奇龙宝",
+        "tip": "比ok手势",
+        "path": "haoqilongbao"
+    },
     {
-        "path": "zhuluojimaoxian", 
-        "dispalyName": "侏罗纪冒险", 
-        "tip": ""
-    }, 
+        "displayName": "暖暖斗篷",
+        "tip": "嘟嘴",
+        "path": "nuannuandoupeng"
+    },
     {
-        "path": "wochaotian", 
-        "dispalyName": "我超甜", 
-        "tip": ""
-    }, 
+        "displayName": "侏罗纪冒险",
+        "tip": "摇头变身不同恐龙",
+        "path": "zhuluojimaoxian"
+    },
     {
-        "path": "haqi", 
-        "dispalyName": "哈气", 
-        "tip": "张嘴试试"
-    }, 
+        "displayName": "我超甜",
+        "tip": "",
+        "path": "wochaotian"
+    },
     {
-        "path": "katongnan", 
-        "dispalyName": "卡通男", 
-        "tip": ""
-    }, 
+        "displayName": "哈气",
+        "tip": "哈气试试",
+        "path": "haqi"
+    },
     {
-        "path": "weilandongrizhuang", 
-        "dispalyName": "微懒冬日装",
-        "tip": ""
-    }, 
+        "displayName": "卡通男",
+        "tip": "",
+        "path": "katongnan"
+    },
     {
-        "path": "duanduandoubeng", 
-        "dispalyName": "暖暖斗篷",
-        "tip": ""
-    }, 
+        "displayName": "蔚蓝冬日妆",
+        "tip": "眨眼嘟嘴",
+        "path": "weilandongrizhuang"
+    },
     {
-        "path": "heimaoyanjing", 
-        "dispalyName": "黑猫眼睛", 
-        "tip": ""
-    }, 
+        "displayName": "黑猫眼镜",
+        "tip": "",
+        "path": "heimaoyanjing"
+    },
     {
-        "path": "leisituer", 
-        "dispalyName": "蕾丝兔", 
-        "tip": ""
-    }, 
+        "displayName": "蕾丝兔耳",
+        "tip": "",
+        "path": "leisituer"
+    },
     {
-        "path": "katongnv", 
-        "dispalyName": "卡通女", 
-        "tip": ""
+        "displayName": "卡通女",
+        "tip": "",
+        "path": "katongnv"
     }
 ]

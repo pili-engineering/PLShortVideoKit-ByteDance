@@ -4,7 +4,7 @@ PLShortVideoKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具有�
 
 Demo下载:
 
-![QRCode](Document/images/qrcode.png)
+![QRCode](Document/resource/images/qrcode.png)
 
 ## 1 功能介绍
 

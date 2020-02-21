@@ -26,137 +26,287 @@ makeupDir = "ComposeMakeup.bundle/ComposeMakeup"
 stickerDir = "StickerResource.bundle/stickers"
 filterDir = "FilterResource.bundle/Filter"
 filter_infos = {
-  "Filter_06_03": {
-    "path": "Filter_06_03",
-    "icon_name": "iconFiltermitao",
-    "displayName": "蜜桃",
-    "intensity": 1
+  "Filter_47_S5" : {
+    "path" : "Filter_47_S5",
+    "icon_name" : "iconFilterlandiaojiaopian",
+    "displayName" : "蓝调胶片",
+    "intensity" : 1
   },
-  "Filter_04_12": {
-    "path": "Filter_04_12",
-    "icon_name": "iconFilterjugeng",
-    "displayName": "桔梗",
-    "intensity": 1
+  "Filter_08_17" : {
+    "path" : "Filter_08_17",
+    "icon_name" : "iconFilterpaomo",
+    "displayName" : "泡沫",
+    "intensity" : 1
   },
-  "Filter_20_05": {
-    "path": "Filter_20_05",
-    "icon_name": "iconFilterjulandiao",
-    "displayName": "橘蓝调",
-    "intensity": 1
+  "Filter_41_F4" : {
+    "path" : "Filter_41_F4",
+    "icon_name" : "iconFiltershise",
+    "displayName" : "食色",
+    "intensity" : 1
   },
-  "Filter_10_11": {
-    "path": "Filter_10_11",
-    "icon_name": "iconFilterqiannuan",
-    "displayName": "浅暖",
-    "intensity": 1
+  "Filter_17_04" : {
+    "path" : "Filter_17_04",
+    "icon_name" : "iconFilternuanyang",
+    "displayName" : "暖阳",
+    "intensity" : 1
   },
-  "Filter_08_17": {
-    "path": "Filter_08_17",
-    "icon_name": "iconFilterpaomo",
-    "displayName": "泡沫",
-    "intensity": 1
+  "Filter_23_Po1" : {
+    "path" : "Filter_23_Po1",
+    "icon_name" : "iconFilterwenrou",
+    "displayName" : "温柔",
+    "intensity" : 1
   },
-  "Filter_01_38": {
-    "path": "Filter_01_38",
-    "icon_name": "iconFilterroubai",
-    "displayName": "柔白",
-    "intensity": 1
+  "Filter_45_S3" : {
+    "path" : "Filter_45_S3",
+    "icon_name" : "iconFilterlutu",
+    "displayName" : "旅途",
+    "intensity" : 1
   },
-  "Filter_14_15": {
-    "path": "Filter_14_15",
-    "icon_name": "iconFilterxiyatu",
-    "displayName": "西雅图",
-    "intensity": 1
+  "Filter_27_Po5" : {
+    "path" : "Filter_27_Po5",
+    "icon_name" : "iconFilternaicha",
+    "displayName" : "奶茶",
+    "intensity" : 1
   },
-  "Filter_22_16": {
-    "path": "Filter_22_16",
-    "icon_name": "iconFilterheibai",
-    "displayName": "黑白",
-    "intensity": 1
+  "Filter_09_19" : {
+    "path" : "Filter_09_19",
+    "icon_name" : "iconFilteryinghua",
+    "displayName" : "樱花",
+    "intensity" : 1
   },
-  "Filter_07_06": {
-    "path": "Filter_07_06",
-    "icon_name": "iconFiltermakalong",
-    "displayName": "马卡龙",
-    "intensity": 1
+  "Filter_37_L5" : {
+    "path" : "Filter_37_L5",
+    "icon_name" : "iconFilterqingtou",
+    "displayName" : "清透",
+    "intensity" : 1
   },
-  "Filter_18_18": {
-    "path": "Filter_18_18",
-    "icon_name": "iconFilterjiuri",
-    "displayName": "旧日",
-    "intensity": 1
+  "Filter_38_F1" : {
+    "path" : "Filter_38_F1",
+    "icon_name" : "iconFilterziran2",
+    "displayName" : "自然2",
+    "intensity" : 1
   },
-  "Filter_15_07": {
-    "path": "Filter_15_07",
-    "icon_name": "iconFilterjingmi",
-    "displayName": "静谧",
-    "intensity": 1
+  "Filter_11_09" : {
+    "path" : "Filter_11_09",
+    "icon_name" : "iconFilterwuyu",
+    "displayName" : "物语",
+    "intensity" : 1
   },
-  "Filter_19_37": {
-    "path": "Filter_19_37",
-    "icon_name": "iconFilterhongchun",
-    "displayName": "红唇",
-    "intensity": 1
+  "Filter_43_S1" : {
+    "path" : "Filter_43_S1",
+    "icon_name" : "iconFiltermeishijiaopian",
+    "displayName" : "美式胶片",
+    "intensity" : 1
   },
-  "Filter_09_19": {
-    "path": "Filter_09_19",
-    "icon_name": "iconFilteryinghua",
-    "displayName": "樱花",
-    "intensity": 1
+  "Filter_12_08" : {
+    "path" : "Filter_12_08",
+    "icon_name" : "iconFilterbeihaidao",
+    "displayName" : "北海道",
+    "intensity" : 1
   },
-  "Filter_12_08": {
-    "path": "Filter_12_08",
-    "icon_name": "iconFilterbeihaidao",
-    "displayName": "北海道",
-    "intensity": 1
+  "Filter_35_L3" : {
+    "path" : "Filter_35_L3",
+    "icon_name" : "iconFilteryese",
+    "displayName" : "夜色",
+    "intensity" : 1
   },
-  "Filter_16_13": {
-    "path": "Filter_16_13",
-    "icon_name": "iconFilterjiaopian",
-    "displayName": "胶片",
-    "intensity": 1
+  "Filter_26_Po4" : {
+    "path" : "Filter_26_Po4",
+    "icon_name" : "iconFilterandiao",
+    "displayName" : "暗调",
+    "intensity" : 1
   },
-  "Filter_13_02": {
-    "path": "Filter_13_02",
-    "icon_name": "iconFilterriza",
-    "displayName": "日杂",
-    "intensity": 1
+  "Filter_03_20" : {
+    "path" : "Filter_03_20",
+    "icon_name" : "iconFilteryangqi",
+    "displayName" : "氧气",
+    "intensity" : 1
   },
-  "Filter_02_14": {
-    "path": "Filter_02_14",
-    "icon_name": "iconFilternaiyou",
-    "displayName": "奶油",
-    "intensity": 1
+  "Filter_33_L1" : {
+    "path" : "Filter_33_L1",
+    "icon_name" : "iconFilterhaidao",
+    "displayName" : "海岛",
+    "intensity" : 1
   },
-  "Filter_03_20": {
-    "path": "Filter_03_20",
-    "icon_name": "iconFilteryangqi",
-    "displayName": "氧气",
-    "intensity": 1
+  "Filter_31_Po9" : {
+    "path" : "Filter_31_Po9",
+    "icon_name" : "iconFilterhaibianrenxiang",
+    "displayName" : "海边人像",
+    "intensity" : 1
   },
-  "Filter_05_10": {
-    "path": "Filter_05_10",
-    "icon_name": "iconFilterluolita",
-    "displayName": "洛丽塔",
-    "intensity": 1
+  "Filter_21_01" : {
+    "path" : "Filter_21_01",
+    "icon_name" : "iconFiltertuise",
+    "displayName" : "褪色",
+    "intensity" : 1
   },
-  "Filter_11_09": {
-    "path": "Filter_11_09",
-    "icon_name": "iconFilterwuyu",
-    "displayName": "物语",
-    "intensity": 1
+  "Filter_42_F5" : {
+    "path" : "Filter_42_F5",
+    "icon_name" : "iconFilterchuanwei",
+    "displayName" : "川味",
+    "intensity" : 1
   },
-  "Filter_17_04": {
-    "path": "Filter_17_04",
-    "icon_name": "iconFilternuanyang",
-    "displayName": "暖阳",
-    "intensity": 1
+  "Filter_02_14" : {
+    "path" : "Filter_02_14",
+    "icon_name" : "iconFilternaiyou",
+    "displayName" : "奶油",
+    "intensity" : 1
   },
-  "Filter_21_01": {
-    "path": "Filter_21_01",
-    "icon_name": "iconFiltertuise",
-    "displayName": "褪色",
-    "intensity": 1
+  "Filter_46_S4" : {
+    "path" : "Filter_46_S4",
+    "icon_name" : "iconFilternuanhuang",
+    "displayName" : "暖黄",
+    "intensity" : 1
+  },
+  "Filter_20_05" : {
+    "path" : "Filter_20_05",
+    "icon_name" : "iconFilterjulandiao",
+    "displayName" : "橘蓝调",
+    "intensity" : 1
+  },
+  "Filter_04_12" : {
+    "path" : "Filter_04_12",
+    "icon_name" : "iconFilterjugeng",
+    "displayName" : "桔梗",
+    "intensity" : 1
+  },
+  "Filter_01_38" : {
+    "path" : "Filter_01_38",
+    "icon_name" : "iconFilterroubai",
+    "displayName" : "柔白",
+    "intensity" : 1
+  },
+  "Filter_14_15" : {
+    "path" : "Filter_14_15",
+    "icon_name" : "iconFilterxiyatu",
+    "displayName" : "西雅图",
+    "intensity" : 1
+  },
+  "Filter_25_Po3" : {
+    "path" : "Filter_25_Po3",
+    "icon_name" : "iconFilterchujian",
+    "displayName" : "初见",
+    "intensity" : 1
+  },
+  "Filter_07_06" : {
+    "path" : "Filter_07_06",
+    "icon_name" : "iconFiltermakalong",
+    "displayName" : "马卡龙",
+    "intensity" : 1
+  },
+  "Filter_18_18" : {
+    "path" : "Filter_18_18",
+    "icon_name" : "iconFilterjiuri",
+    "displayName" : "旧日",
+    "intensity" : 1
+  },
+  "Filter_19_37" : {
+    "path" : "Filter_19_37",
+    "icon_name" : "iconFilterhongchun",
+    "displayName" : "红唇",
+    "intensity" : 1
+  },
+  "Filter_16_13" : {
+    "path" : "Filter_16_13",
+    "icon_name" : "iconFilterjiaopian",
+    "displayName" : "胶片",
+    "intensity" : 1
+  },
+  "Filter_29_Po7" : {
+    "path" : "Filter_29_Po7",
+    "icon_name" : "iconFilterxiyang",
+    "displayName" : "夕阳",
+    "intensity" : 1
+  },
+  "Filter_22_16" : {
+    "path" : "Filter_22_16",
+    "icon_name" : "iconFilterheibai",
+    "displayName" : "黑白",
+    "intensity" : 1
+  },
+  "Filter_30_Po8" : {
+    "path" : "Filter_30_Po8",
+    "icon_name" : "iconFilterlengyang",
+    "displayName" : "冷氧",
+    "intensity" : 1
+  },
+  "Filter_15_07" : {
+    "path" : "Filter_15_07",
+    "icon_name" : "iconFilterjingmi",
+    "displayName" : "静谧",
+    "intensity" : 1
+  },
+  "Filter_32_Po10" : {
+    "path" : "Filter_32_Po10",
+    "icon_name" : "iconFiltergaojihui",
+    "displayName" : "高级灰",
+    "intensity" : 1
+  },
+  "Filter_06_03" : {
+    "path" : "Filter_06_03",
+    "icon_name" : "iconFiltermitao",
+    "displayName" : "蜜桃",
+    "intensity" : 1
+  },
+  "Filter_13_02" : {
+    "path" : "Filter_13_02",
+    "icon_name" : "iconFilterriza",
+    "displayName" : "日杂",
+    "intensity" : 1
+  },
+  "Filter_36_L4" : {
+    "path" : "Filter_36_L4",
+    "icon_name" : "iconFilterhongzong",
+    "displayName" : "红棕",
+    "intensity" : 1
+  },
+  "Filter_39_F2" : {
+    "path" : "Filter_39_F2",
+    "icon_name" : "iconFiltersuda",
+    "displayName" : "苏打",
+    "intensity" : 1
+  },
+  "Filter_40_F3" : {
+    "path" : "Filter_40_F3",
+    "icon_name" : "iconFilterjiazhou",
+    "displayName" : "加州",
+    "intensity" : 1
+  },
+  "Filter_10_11" : {
+    "path" : "Filter_10_11",
+    "icon_name" : "iconFilterqiannuan",
+    "displayName" : "浅暖",
+    "intensity" : 1
+  },
+  "Filter_44_S2" : {
+    "path" : "Filter_44_S2",
+    "icon_name" : "iconFilterhongsefugu",
+    "displayName" : "红色复古",
+    "intensity" : 1
+  },
+  "Filter_24_Po2" : {
+    "path" : "Filter_24_Po2",
+    "icon_name" : "iconFilterlianaichaotian",
+    "displayName" : "恋爱超甜",
+    "intensity" : 1
+  },
+  "Filter_34_L2" : {
+    "path" : "Filter_34_L2",
+    "icon_name" : "iconFilterqianxia",
+    "displayName" : "浅夏",
+    "intensity" : 1
+  },
+  "Filter_28_Po6" : {
+    "path" : "Filter_28_Po6",
+    "icon_name" : "iconFiltersoft",
+    "displayName" : "soft",
+    "intensity" : 1
+  },
+  "Filter_05_10" : {
+    "path" : "Filter_05_10",
+    "icon_name" : "iconFilterluolita",
+    "displayName" : "洛丽塔",
+    "intensity" : 1
   }
 }
 makeupListStr = """

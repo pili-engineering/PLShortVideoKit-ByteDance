@@ -11,7 +11,7 @@ PLShortVideoKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具有�
 
 # 3 总体设计
 
-本产品由PLEffect和PLShortVideoKit两部分组成，本文档将介绍特效部分的开发接入，PLSortVideoKit 开发文档请参考**[PLShortVideoKit 文档](https://developer.qiniu.com/pili/sdk/3733/short-video-ios-sdk)**
+本产品由 PLEffect 和 PLShortVideoKit 两部分组成，本文档将介绍特效部分的开发接入，PLSortVideoKit 开发文档请参考**[PLShortVideoKit 文档](https://developer.qiniu.com/pili/sdk/3733/short-video-ios-sdk)**
 
 
 ## 3.1 基本规则
@@ -48,9 +48,10 @@ PLShortVideoKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具有�
 
 ## 4.3 导入 SDK
 
-### Podfile
+### 专业版安装
+**如果你购买的是七牛专业版本的短视频 SDK，请使用下面的安装方式：**
 
-为了使用 CoacoaPods 集成 PLShortVideoKit-ByteDance 到你的 Xcode 工程当中，你需要编写你的 `Podfile`
+#### Podfile 添加专业版 
 
 ```ruby
 target 'TargetName' do
@@ -63,6 +64,39 @@ end
 ```bash
 $ pod install
 ```
+### 进阶版安装
+**如果你购买的是七牛进阶版本的短视频 SDK，请使用下面的安装方式：**
+
+#### Podfile 添加进阶版 
+
+```ruby
+target 'TargetName' do
+pod 'PLShortVideoKit-ByteDance', :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLShortVideoKit-ByteDance/master/PLShortVideoKit-Advanced-ByteDance.podspec'
+end
+```
+
+然后，运行如下的命令：
+
+```bash
+$ pod install
+```
+
+### 基础版安装
+**如果你购买的是七牛基础版本的短视频 SDK，请使用下面的安装方式：**
+
+#### Podfile 添加基础版 
+
+```ruby
+target 'TargetName' do
+pod 'PLShortVideoKit-ByteDance', :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLShortVideoKit-ByteDance/master/PLShortVideoKit-Basic-ByteDance.podspec'
+end
+```
+
+然后，运行如下的命令：
+
+```bash
+$ pod install
+```   
 
 ## 4.4 添加权限说明
 我们需要在 Info.plist 文件中添加相应权限的说明，否则程序在 iOS 10 系统上会出现崩溃。需要添加如下权限：
@@ -80,13 +114,13 @@ $ pod install
 │   └── ComposeMakeup
 │       ├── beauty_IOS
 │       ├── composer
-│       ├── list_ios.json 		 //列表文件，PLSEffectDataManager将根据此文件生成美颜美妆列表，可自行编辑
+│       ├── list_ios.json 		 //列表文件，PLSEffectDataManager 将根据此文件生成美颜美妆列表，可自行编辑
 │       ├── list_sample.json  	//列表文件示例
 │       └── reshape
 ├── FilterResource.bundle
 │   └── Filter
 │       ├──***
-│       └── list.json  	//列表文件，PLSEffectDataManager将根据此文件生成滤镜列表，可自行编辑
+│       └── list.json  	//列表文件，PLSEffectDataManager 将根据此文件生成滤镜列表，可自行编辑
 ├── LicenseBag.bundle  	//授权文件
 │   └── ***.licbag
 ├── ModelResource.bundle   	//算法模型文件
@@ -99,23 +133,23 @@ $ pod install
 └── StickerResource.bundle 		//贴纸素材
     └── stickers
         ├── ***
-        └── list.json  		 //列表文件，PLSEffectDataManager将根据此文件生成贴纸列表，可自行编辑
+        └── list.json  		 //列表文件，PLSEffectDataManager 将根据此文件生成贴纸列表，可自行编辑
 ```
 
 ## 4.6 使用方法
-初始化PLSEffectMananger
+初始化 PLSEffectMananger
 
 ```
-//资源文件根目录，这里是MainBundle
+//资源文件根目录，这里是 MainBundle
 NSString *rootPath = [[NSBundle mainBundle] resourcePath];
 PLSEffectConfiguration *effectConfiguration = [PLSEffectConfiguration new];
 effectConfiguration.modelFileDirPath = [NSString pathWithComponents:@[rootPath, @"ModelResource.bundle"]];
 effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"(你自己的授权文件名).licbag"]];
     
-//初始化datamanager
+//初始化 datamanager
 _effectDataManager = [[PLSEffectDataManager alloc] initWithRootPath:rootPath];
     
-//初始化effecManager
+//初始化 effecManager
 _effectManager = [PLSEffectManager sharedWith:[[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2] configuration:effectConfiguration];
 ```
 
@@ -134,11 +168,11 @@ for (PLSMakeUpComponentModel *model in components) {
 }
 ```
 
-传入待处理的CVPiexelbuffer或者texture
+传入待处理的 CVPiexelbuffer 或者 texture
 
 ```
 double timestamp = timingInfo.presentationTimeStamp.value/timingInfo.presentationTimeStamp.timescale;
-//相机采集buffer的方向和设备方向将用于推测人脸的方向，传入不正确可能导致人脸识别失败
+//相机采集 buffer 的方向和设备方向将用于推测人脸的方向，传入不正确可能导致人脸识别失败
 [self.effectManager processBuffer:pixelBuffer withTimestamp:timestamp videoOrientation:self.shortVideoRecorder.videoOrientation deviceOrientation:self.deviceOrientation];
 ```
 

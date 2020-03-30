@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/PLSEffect.h</key>
 		<data>
-		TfTMu8szjIZdPlomxpFw9kke1Wc=
+		usdsS7uU1sgFbx9//wpCBXxRwV0=
 		</data>
 		<key>Headers/PLSEffectConfiguration.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/PLSEffectDataManager.h</key>
 		<data>
-		zyYXfrnfJFe6tafEJL1B4UVMCr4=
+		pyJ3ug2XpPGpcBNMSRvwQ7ILdFU=
 		</data>
 		<key>Headers/PLSEffectManager.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4xAPMRIKCKPabQBu7IE7yCGHHHw=
+		ohZGjjSgEB456Rnst4Cq7r8wZ48=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,11 +58,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TfTMu8szjIZdPlomxpFw9kke1Wc=
+			usdsS7uU1sgFbx9//wpCBXxRwV0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ue1sQXp12jqEeXShMkYjWBq2qJNqbGF2gj3prSihjKs=
+			C2Ef0scwSTLPb7k9MvwKW9r55FtZmPFBrtKVOT3Ue28=
 			</data>
 		</dict>
 		<key>Headers/PLSEffectConfiguration.h</key>
@@ -80,11 +80,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zyYXfrnfJFe6tafEJL1B4UVMCr4=
+			pyJ3ug2XpPGpcBNMSRvwQ7ILdFU=
 			</data>
 			<key>hash2</key>
 			<data>
-			QtJiMC9I1eukML27SQGd8qyV3I9QcAGEayQ27u7J9wY=
+			YKvQhwnLN0Kfw2vR12ALPCs6a/Eo2+tOXU9AgzFGSoc=
 			</data>
 		</dict>
 		<key>Headers/PLSEffectManager.h</key>

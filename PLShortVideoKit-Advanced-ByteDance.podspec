@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint PLShortVideoKit-ByteDance.podspec' to ensure this is a
+#  Be sure to run `pod spec lint PLShortVideoKit.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/pili-engineering/PLShortVideoKit-ByteDance"
   s.license      = "Apache License 2.0"
   s.author       = { "pili" => "pili@qiniu.com" }
-  s.source       = { :http => "https://sdk-release.qnsdk.com/PLShortVideoKit-profession-ByteDance-v1.0.1.zip"}
+  s.source       = { :http => "https://sdk-release.qnsdk.com/PLShortVideoKit-advanced-ByteDance-v1.0.1.zip"}
   s.platform     = :ios
   s.requires_arc = true
 
@@ -24,12 +24,12 @@ Pod::Spec.new do |s|
 
 
   s.subspec "ex-libMuseProcessor" do |ss1|
-    ss1.vendored_frameworks		= 'Pod/Library/Profession/*.framework'
+    ss1.vendored_framework		= "Pod/Library/Advanced/*.framework"
   end
 
 
   s.subspec "libMuseProcessor" do |ss2|
-    ss2.vendored_libraries		= 'Pod/Library/Profession/*.a'
+    ss2.vendored_libraries		= 'Pod/Library/Advanced/*.a'
   end
 
 end

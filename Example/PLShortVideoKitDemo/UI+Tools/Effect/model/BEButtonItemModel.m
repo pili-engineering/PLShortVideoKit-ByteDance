@@ -191,7 +191,26 @@
                 initWithType:PLSMakeUpTypeReshape
                 selectImg:@"iconBeautyReshapeMouthSmileSelect"
                 unselectImg:@"iconBeautyReshapeMouthSmileNormal"
-                title:@""];}
+                title:@""];
+    }else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_EYEMOVE]) {
+        return [BEButtonItemModel
+                initWithType:PLSMakeUpTypeReshape
+                selectImg:@"iconBeautyReshapeEyeRotateSelect"
+                unselectImg:@"iconBeautyReshapeEyeRotateNormal"
+                title:@""];
+    }else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_EYESPACING]) {
+        return [BEButtonItemModel
+                initWithType:PLSMakeUpTypeReshape
+                selectImg:@"iconBeautyReshapeEyeRotateSelect"
+                unselectImg:@"iconBeautyReshapeEyeRotateNormal"
+                title:@""];
+    }else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_MOVMOUTH]) {
+        return [BEButtonItemModel
+                initWithType:PLSMakeUpTypeReshape
+                selectImg:@"iconBeautyReshapeMouthZoomSelect"
+                unselectImg:@"iconBeautyReshapeMouthZoomNormal"
+                title:@""];
+    }
     
     NSAssert(NO, @"undefined key!!");
     return [self initWithType:PLSMakeUpTypeReshape selectImg:nil unselectImg:nil title:nil];

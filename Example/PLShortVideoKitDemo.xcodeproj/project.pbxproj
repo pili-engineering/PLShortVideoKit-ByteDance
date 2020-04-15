@@ -180,7 +180,6 @@
 		41BC1F7A23BED82B00744BB0 /* LicenseBag.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41BC1F7423BED82B00744BB0 /* LicenseBag.bundle */; };
 		41BC1F7B23BED82B00744BB0 /* FilterResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41BC1F7523BED82B00744BB0 /* FilterResource.bundle */; };
 		41CC7DBB23B5A2D9000EC76D /* libeffect-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CC7DB923B5A251000EC76D /* libeffect-sdk.a */; };
-		41CD182C23B9CB1A00C600A9 /* PLSEffect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D9BC3323B9C73D00BE4130 /* PLSEffect.framework */; };
 		760AE4F820B014FD00DA4EC3 /* VideoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AE4F720B014FD00DA4EC3 /* VideoSelectViewController.m */; };
 		760F7703202AF92A0052F513 /* MulitClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760F76F5202AF92A0052F513 /* MulitClipViewController.m */; };
 		760F7704202AF92A0052F513 /* MulitPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760F76F6202AF92A0052F513 /* MulitPhotoAlbumViewController.m */; };
@@ -219,7 +218,6 @@
 		76ECAC5021880EFC00EA153E /* ImageVideoMixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ECAC4F21880EFC00EA153E /* ImageVideoMixViewController.m */; };
 		9343A8C01F66763A007213BD /* Time_Machine_No_Reverser.png in Resources */ = {isa = PBXBuildFile; fileRef = 9343A8BE1F66763A007213BD /* Time_Machine_No_Reverser.png */; };
 		9343A8C11F66763A007213BD /* Time_Machine_Reverser.png in Resources */ = {isa = PBXBuildFile; fileRef = 9343A8BF1F66763A007213BD /* Time_Machine_Reverser.png */; };
-		9CE2C18E237C020500D43873 /* PLShortVideoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC277F1A223A417C004137ED /* PLShortVideoKit.framework */; };
 		AA09EB0322E7F71E001BBA54 /* PLSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA09EB0222E7F71E001BBA54 /* PLSDrawView.m */; };
 		AA09EB0D22E7FD2F001BBA54 /* PLSDrawBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AA09EB0C22E7FD2F001BBA54 /* PLSDrawBar.m */; };
 		AA09EB1022E80583001BBA54 /* PLSDrawModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA09EB0F22E80583001BBA54 /* PLSDrawModel.m */; };
@@ -267,65 +265,6 @@
 		C3FCBFD91F305B8A007EBB10 /* icon_gif.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FCBFD81F305B8A007EBB10 /* icon_gif.png */; };
 		F360B89E036039A66815D9FE /* libPods-PLShortVideoKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AEAFA0012D959C08AB23AE /* libPods-PLShortVideoKitDemo.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0A9435DC1E6CA3D4008845A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A9435D81E6CA3D4008845A3 /* PLShortVideoKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0A9435A01E6CA32F008845A3;
-			remoteInfo = PLShortVideoKit;
-		};
-		0A94DFA51E6DCF09007BDD0D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A9435D81E6CA3D4008845A3 /* PLShortVideoKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A94359F1E6CA32F008845A3;
-			remoteInfo = PLShortVideoKit;
-		};
-		41CD182023B9CB1300C600A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41D9BC2E23B9C73D00BE4130 /* PLSEffect.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 419C2DE323B9C2A8007D4542;
-			remoteInfo = PLSEffect;
-		};
-		41D9BC3223B9C73D00BE4130 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41D9BC2E23B9C73D00BE4130 /* PLSEffect.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 419C2DE423B9C2A8007D4542;
-			remoteInfo = PLSEffect;
-		};
-		9C0CD1BA2341A00400692CCE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A9435D81E6CA3D4008845A3 /* PLShortVideoKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AA1B18DD231D336500645CEF;
-			remoteInfo = PLShortVideoSmartKit;
-		};
-		BC277F17223A417C004137ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A9435D81E6CA3D4008845A3 /* PLShortVideoKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCD9A496221FD48B009A7315;
-			remoteInfo = PLShortVideoCoreKit;
-		};
-		BC277F19223A417C004137ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A9435D81E6CA3D4008845A3 /* PLShortVideoKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC277D652238DE7B004137ED;
-			remoteInfo = PLShortVideoBasicKit;
-		};
-		BCA4E706223F8E9800957D24 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A9435D81E6CA3D4008845A3 /* PLShortVideoKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCF95E81223B462600D87795;
-			remoteInfo = PLShortVideoStandardKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A0692311E8A3B590035CB7B /* btn_bar_back_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_bar_back_a@2x.png"; path = "images/btn_bar_back_a@2x.png"; sourceTree = "<group>"; };
@@ -425,7 +364,6 @@
 		0A94358B1E6CA2E2008845A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A94358E1E6CA2E2008845A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A9435901E6CA2E2008845A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A9435D81E6CA3D4008845A3 /* PLShortVideoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PLShortVideoKit.xcodeproj; path = ../PLShortVideoKit/PLShortVideoKit.xcodeproj; sourceTree = "<group>"; };
 		0A94DFC61E6DF5D2007BDD0D /* end_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = end_normal.png; path = images/end_normal.png; sourceTree = "<group>"; };
 		0A94DFC71E6DF5D2007BDD0D /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete.png; path = images/delete.png; sourceTree = "<group>"; };
 		0A94DFCB1E6DF5D2007BDD0D /* toggle_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toggle_camera.png; path = images/toggle_camera.png; sourceTree = "<group>"; };
@@ -551,7 +489,6 @@
 		41BC1F7423BED82B00744BB0 /* LicenseBag.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LicenseBag.bundle; sourceTree = "<group>"; };
 		41BC1F7523BED82B00744BB0 /* FilterResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FilterResource.bundle; sourceTree = "<group>"; };
 		41CC7DB923B5A251000EC76D /* libeffect-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libeffect-sdk.a"; path = "../Lib/libeffect-sdk.a"; sourceTree = "<group>"; };
-		41D9BC2E23B9C73D00BE4130 /* PLSEffect.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PLSEffect.xcodeproj; path = ../PLSEffect/PLSEffect.xcodeproj; sourceTree = "<group>"; };
 		57AEAFA0012D959C08AB23AE /* libPods-PLShortVideoKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLShortVideoKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		760AE4F620B014FD00DA4EC3 /* VideoSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoSelectViewController.h; sourceTree = "<group>"; };
 		760AE4F720B014FD00DA4EC3 /* VideoSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoSelectViewController.m; sourceTree = "<group>"; };
@@ -676,9 +613,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41CD182C23B9CB1A00C600A9 /* PLSEffect.framework in Frameworks */,
 				41CC7DBB23B5A2D9000EC76D /* libeffect-sdk.a in Frameworks */,
-				9CE2C18E237C020500D43873 /* PLShortVideoKit.framework in Frameworks */,
 				BC281BF8225212C700CC7584 /* ReplayKit.framework in Frameworks */,
 				0A0DCA2A1FB0715100F1446F /* Accelerate.framework in Frameworks */,
 				C3A78FB71F95F67500C3F2D6 /* libc++.tbd in Frameworks */,
@@ -708,8 +643,6 @@
 		0A9435731E6CA2E2008845A3 = {
 			isa = PBXGroup;
 			children = (
-				41D9BC2E23B9C73D00BE4130 /* PLSEffect.xcodeproj */,
-				0A9435D81E6CA3D4008845A3 /* PLShortVideoKit.xcodeproj */,
 				0A94357E1E6CA2E2008845A3 /* PLShortVideoKitDemo */,
 				0A94357D1E6CA2E2008845A3 /* Products */,
 				32B90CBBA587775FFC5C4D5B /* Pods */,
@@ -929,18 +862,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A9435D91E6CA3D4008845A3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A9435DD1E6CA3D4008845A3 /* PLShortVideoKit.framework */,
-				BC277F18223A417C004137ED /* PLShortVideoKit.framework */,
-				BC277F1A223A417C004137ED /* PLShortVideoKit.framework */,
-				BCA4E707223F8E9800957D24 /* PLShortVideoKit.framework */,
-				9C0CD1BB2341A00400692CCE /* PLShortVideoKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0A9B8A6520B6822800E7C8D7 /* StickerToolbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -1154,14 +1075,6 @@
 			path = BundleResource;
 			sourceTree = "<group>";
 		};
-		41D9BC2F23B9C73D00BE4130 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41D9BC3323B9C73D00BE4130 /* PLSEffect.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		760F76F4202AF92A0052F513 /* SegmentEffects */ = {
 			isa = PBXGroup;
 			children = (
@@ -1249,8 +1162,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				41CD182123B9CB1300C600A9 /* PBXTargetDependency */,
-				0A94DFA61E6DCF09007BDD0D /* PBXTargetDependency */,
 			);
 			name = PLShortVideoKitDemo;
 			productName = PLShortVideoKitDemo;
@@ -1286,67 +1197,12 @@
 			mainGroup = 0A9435731E6CA2E2008845A3;
 			productRefGroup = 0A94357D1E6CA2E2008845A3 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 41D9BC2F23B9C73D00BE4130 /* Products */;
-					ProjectRef = 41D9BC2E23B9C73D00BE4130 /* PLSEffect.xcodeproj */;
-				},
-				{
-					ProductGroup = 0A9435D91E6CA3D4008845A3 /* Products */;
-					ProjectRef = 0A9435D81E6CA3D4008845A3 /* PLShortVideoKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0A94357B1E6CA2E2008845A3 /* PLShortVideoKitDemo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0A9435DD1E6CA3D4008845A3 /* PLShortVideoKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PLShortVideoKit.framework;
-			remoteRef = 0A9435DC1E6CA3D4008845A3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41D9BC3323B9C73D00BE4130 /* PLSEffect.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PLSEffect.framework;
-			remoteRef = 41D9BC3223B9C73D00BE4130 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9C0CD1BB2341A00400692CCE /* PLShortVideoKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PLShortVideoKit.framework;
-			remoteRef = 9C0CD1BA2341A00400692CCE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BC277F18223A417C004137ED /* PLShortVideoKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PLShortVideoKit.framework;
-			remoteRef = BC277F17223A417C004137ED /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BC277F1A223A417C004137ED /* PLShortVideoKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PLShortVideoKit.framework;
-			remoteRef = BC277F19223A417C004137ED /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BCA4E707223F8E9800957D24 /* PLShortVideoKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PLShortVideoKit.framework;
-			remoteRef = BCA4E706223F8E9800957D24 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0A94357A1E6CA2E2008845A3 /* Resources */ = {
@@ -1639,19 +1495,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0A94DFA61E6DCF09007BDD0D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PLShortVideoKit;
-			targetProxy = 0A94DFA51E6DCF09007BDD0D /* PBXContainerItemProxy */;
-		};
-		41CD182123B9CB1300C600A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PLSEffect;
-			targetProxy = 41CD182023B9CB1300C600A9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0A9435881E6CA2E2008845A3 /* Main.storyboard */ = {

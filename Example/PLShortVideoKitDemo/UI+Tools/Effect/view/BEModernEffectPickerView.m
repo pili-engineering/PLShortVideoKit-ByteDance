@@ -138,64 +138,64 @@ BEModernFilterPickerViewDelegate>
         }
     }
     
-//    NSArray<PLSMakeUpComponentModel *> *bodyArr = [_dataManager fetchMakeUpComponentsWithType:PLSMakeUpTypeBody];
-//    if (bodyArr.count > 0) {
-//        [cat addObject:[BEEffectCategoryModel categoryWithType:BEEffectPanelTabBeautyBody title:@"美体"]];
-//        [_mapArr addObject:[NSMutableDictionary new]];
-//        BEButtonItemModel *bodyNode = [BEButtonItemModel new];
-//        bodyNode.type = PLSMakeUpTypeUndefined;
-//        [_rootNode addChild:bodyNode];
-//
-//        BEButtonItemModel *clear = [BEButtonItemModel clearModel];
-//        clear.type = PLSMakeUpTypeBody;
-//        [bodyNode addChild:clear];
-//
-//        for (PLSMakeUpComponentModel *item in bodyArr) {
-//            BEButtonItemModel *btItem = [BEButtonItemModel bodyModelWithPath:item.path];
-//            btItem.relatedModel = item;
-//            btItem.title = item.displayName;
-//            [bodyNode addChild:btItem];
-//        }
-//    }
-//
-//    NSDictionary* map = @{
-//        @(PLSMakeUpTypeLip):@"口红",
-//        @(PLSMakeUpTypeBlush):@"腮红",
-//        @(PLSMakeUpTypeFacial):@"修容",
-//        @(PLSMakeUpTypePupil):@"美瞳",
-//        @(PLSMakeUpTypeHair):@"染发",
-//        @(PLSMakeUpTypeEyeshadow):@"眼影",
-//        @(PLSMakeUpTypeEyebrow):@"眉毛"
-//    };
+    NSArray<PLSMakeUpComponentModel *> *bodyArr = [_dataManager fetchMakeUpComponentsWithType:PLSMakeUpTypeBody];
+    if (bodyArr.count > 0) {
+        [cat addObject:[BEEffectCategoryModel categoryWithType:BEEffectPanelTabBeautyBody title:@"美体"]];
+        [_mapArr addObject:[NSMutableDictionary new]];
+        BEButtonItemModel *bodyNode = [BEButtonItemModel new];
+        bodyNode.type = PLSMakeUpTypeUndefined;
+        [_rootNode addChild:bodyNode];
+        
+        BEButtonItemModel *clear = [BEButtonItemModel clearModel];
+        clear.type = PLSMakeUpTypeBody;
+        [bodyNode addChild:clear];
+        
+        for (PLSMakeUpComponentModel *item in bodyArr) {
+            BEButtonItemModel *btItem = [BEButtonItemModel bodyModelWithPath:item.path];
+            btItem.relatedModel = item;
+            btItem.title = item.displayName;
+            [bodyNode addChild:btItem];
+        }
+    }
     
-//    BEButtonItemModel *makeupNode = [BEButtonItemModel new];
-//    makeupNode.level = _rootNode.level + 1;
-//    BEButtonItemModel *clear = [BEButtonItemModel clearModel];
-//    [makeupNode addChild:clear];
-//    for (NSInteger i = PLSMakeUpTypeLip; i < PLSMakeUpTypeEnd; i ++) {
-//        NSArray<PLSMakeUpComponentModel *> *makeupArr = [_dataManager fetchMakeUpComponentsWithType:(PLSMakeUpType)i];
-//        if (makeupArr.count > 0) {
-//            BEButtonItemModel *node = [BEButtonItemModel makeupModelWithType:i];
-//            node.title = map[@(i)];
-//            [makeupNode addChild:node];
-//
-//            BEButtonItemModel *clear = [BEButtonItemModel clearModel];
-//            clear.type = i;
-//            [node addChild:clear];
-//            for (PLSMakeUpComponentModel *item in makeupArr) {
-//                BEButtonItemModel *btItem = [BEButtonItemModel makeupModelWithType:i];
-//                btItem.relatedModel = item;
-//                btItem.title = item.displayName;
-//                [node addChild:btItem];
-//            }
-//        }
-//    }
+    NSDictionary* map = @{
+        @(PLSMakeUpTypeLip):@"口红",
+        @(PLSMakeUpTypeBlush):@"腮红",
+        @(PLSMakeUpTypeFacial):@"修容",
+        @(PLSMakeUpTypePupil):@"美瞳",
+        @(PLSMakeUpTypeHair):@"染发",
+        @(PLSMakeUpTypeEyeshadow):@"眼影",
+        @(PLSMakeUpTypeEyebrow):@"眉毛"
+    };
     
-//    if (makeupNode.children.count > 1) {
-//        [cat addObject:[BEEffectCategoryModel categoryWithType:BEEffectPanelTabMakeup title:@"美妆"]];
-//        [_mapArr addObject:[NSMutableDictionary new]];
-//        [_rootNode addChild:makeupNode];
-//    }
+    BEButtonItemModel *makeupNode = [BEButtonItemModel new];
+    makeupNode.level = _rootNode.level + 1;
+    BEButtonItemModel *clear = [BEButtonItemModel clearModel];
+    [makeupNode addChild:clear];
+    for (NSInteger i = PLSMakeUpTypeLip; i < PLSMakeUpTypeEnd; i ++) {
+        NSArray<PLSMakeUpComponentModel *> *makeupArr = [_dataManager fetchMakeUpComponentsWithType:(PLSMakeUpType)i];
+        if (makeupArr.count > 0) {
+            BEButtonItemModel *node = [BEButtonItemModel makeupModelWithType:i];
+            node.title = map[@(i)];
+            [makeupNode addChild:node];
+            
+            BEButtonItemModel *clear = [BEButtonItemModel clearModel];
+            clear.type = i;
+            [node addChild:clear];
+            for (PLSMakeUpComponentModel *item in makeupArr) {
+                BEButtonItemModel *btItem = [BEButtonItemModel makeupModelWithType:i];
+                btItem.relatedModel = item;
+                btItem.title = item.displayName;
+                [node addChild:btItem];
+            }
+        }
+    }
+    
+    if (makeupNode.children.count > 1) {
+        [cat addObject:[BEEffectCategoryModel categoryWithType:BEEffectPanelTabMakeup title:@"美妆"]];
+        [_mapArr addObject:[NSMutableDictionary new]];
+        [_rootNode addChild:makeupNode];
+    }
     
     NSArray<PLSEffectModel *> *filterArr = [_dataManager fetchEffectListWithType:PLSEffectTypeFilter];
     if (filterArr.count > 0) {
@@ -249,17 +249,17 @@ BEModernFilterPickerViewDelegate>
     [_effectManager updateFilterIntensity:_selectedFilter.intensity];
 }
 
-//- (NSDictionary *)typeInternalKeyMap {
-//    return @{
-//        @(PLSMakeUpTypeLip):PLS_EFFECT_INTERNALKEY_LIP,
-//        @(PLSMakeUpTypeBlush):PLS_EFFECT_INTERNALKEY_BLUSHER,
-//        @(PLSMakeUpTypeFacial):PLS_EFFECT_INTERNALKEY_FACIAL,
-//        @(PLSMakeUpTypePupil):PLS_EFFECT_INTERNALKEY_PUPIL,
-//        @(PLSMakeUpTypeHair):PLS_EFFECT_INTERNALKEY_HAIR,
-//        @(PLSMakeUpTypeEyeshadow):PLS_EFFECT_INTERNALKEY_EYESHADOW,
-//        @(PLSMakeUpTypeEyebrow):PLS_EFFECT_INTERNALKEY_EYEBROW
-//    };
-//}
+- (NSDictionary *)typeInternalKeyMap {
+    return @{
+        @(PLSMakeUpTypeLip):PLS_EFFECT_INTERNALKEY_LIP,
+        @(PLSMakeUpTypeBlush):PLS_EFFECT_INTERNALKEY_BLUSHER,
+        @(PLSMakeUpTypeFacial):PLS_EFFECT_INTERNALKEY_FACIAL,
+        @(PLSMakeUpTypePupil):PLS_EFFECT_INTERNALKEY_PUPIL,
+        @(PLSMakeUpTypeHair):PLS_EFFECT_INTERNALKEY_HAIR,
+        @(PLSMakeUpTypeEyeshadow):PLS_EFFECT_INTERNALKEY_EYESHADOW,
+        @(PLSMakeUpTypeEyebrow):PLS_EFFECT_INTERNALKEY_EYEBROW
+    };
+}
 
 #pragma mark - delegate
 
@@ -280,9 +280,9 @@ BEModernFilterPickerViewDelegate>
         _selectedItem = item;
         PLSMakeUpComponentModel *model = item.relatedModel;
         NSString *key = model.internalKey.length > 0 ? model.internalKey : model.path;
-//        if (!key) {
-//            key = [self typeInternalKeyMap][@(item.type)];
-//        }
+        if (!key) {
+            key = [self typeInternalKeyMap][@(item.type)];
+        }
         NSMutableDictionary *map = _mapArr[_categoryView.switchTabView.selectedIndex];
         if (key) {
             map[key] = item.relatedModel;
@@ -291,7 +291,7 @@ BEModernFilterPickerViewDelegate>
         }
         [self updateComponent];
         
-        _textSlider.hidden = (/*!item.type == PLSMakeUpTypeBody ||*/ item.relatedModel == nil);
+        _textSlider.hidden = (item.type == PLSMakeUpTypeBody || item.relatedModel == nil);
         _textSlider.progress = ((PLSMakeUpComponentModel *)item.relatedModel).intensity;
         
     } else {

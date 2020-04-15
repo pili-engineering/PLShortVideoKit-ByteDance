@@ -35,59 +35,83 @@
                 selectImg:@"iconFaceBeautySharpSelected.png"
                 unselectImg:@"iconFaceBeautySharpNormal.png"
                 title:@""];
+    }else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_BRIGHTEN_EYE]) {
+    return [BEButtonItemModel
+            initWithType: PLSMakeUpTypeBeauty
+            selectImg:@"iconFaceBeautySkinSelected.png"
+            unselectImg:@"iconFaceBeautySkinNormal.png"
+            title:@""];
+    }else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_WHITEN_TEETH]) {
+    return [BEButtonItemModel
+            initWithType: PLSMakeUpTypeBeauty
+            selectImg:@"iconFaceBeautySharpSelected.png"
+            unselectImg:@"iconFaceBeautySharpNormal.png"
+            title:@""];
+    }else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_REMOVE_POUCH]) {
+    return [BEButtonItemModel
+            initWithType: PLSMakeUpTypeBeauty
+            selectImg:@"iconFaceBeautySkinSelected.png"
+            unselectImg:@"iconFaceBeautySkinNormal.png"
+            title:@""];
+    }else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_SMILES_FOLDS]) {
+    return [BEButtonItemModel
+            initWithType: PLSMakeUpTypeBeauty
+            selectImg:@"iconFaceBeautySharpSelected.png"
+            unselectImg:@"iconFaceBeautySharpNormal.png"
+            title:@""];
     }
     NSAssert(NO, @"undefined key!!");
     return [self initWithType:PLSMakeUpTypeBeauty selectImg:nil unselectImg:nil title:nil];
 }
 
-//+ (instancetype)makeupModelWithType:(PLSMakeUpType)type {
-//    if (type == PLSMakeUpTypeBlush) {
-//        return [BEButtonItemModel
-//                initWithType: type
-//                selectImg:@"iconFaceMakeUpBlusherSelected.png"
-//                unselectImg:@"iconFaceMakeUpBlusherNormal.png"
-//                title:@""];
-//    } else if (type == PLSMakeUpTypeLip) {
-//        return [BEButtonItemModel
-//                initWithType: type
-//                selectImg:@"iconFaceMakeUpLipsSelected.png"
-//                unselectImg:@"iconFaceMakeUpLipsNormal.png"
-//                title:@""];
-//    } else if (type == PLSMakeUpTypeFacial) {
-//        return [BEButtonItemModel
-//                initWithType: type
-//                selectImg:@"iconFaceMakeUpFacialSelected.png"
-//                unselectImg:@"iconFaceMakeUpFacialNormal.png"
-//                title:@""];
-//    } else if (type == PLSMakeUpTypePupil) {
-//        return [BEButtonItemModel
-//                initWithType: type
-//                selectImg:@"iconFaceMakeUpPupilSelected.png"
-//                unselectImg:@"iconFaceMakeUpPupilNormal.png"
-//                title:@""];
-//    } else if (type == PLSMakeUpTypeHair) {
-//        return [BEButtonItemModel
-//                initWithType: type
-//                selectImg:@"iconHairSelected.png"
-//                unselectImg:@"iconHairNormal.png"
-//                title:@""];
-//    } else if (type == PLSMakeUpTypeEyeshadow) {
-//        return [BEButtonItemModel
-//                initWithType: type
-//                selectImg:@"iconFaceMakeUpEyeshadowSelected.png"
-//                unselectImg:@"iconFaceMakeUpEyeshadowNormal.png"
-//                title:@""];
-//    } else if (type == PLSMakeUpTypeEyebrow) {
-//        return [BEButtonItemModel
-//                initWithType: type
-//                selectImg:@"iconFaceMakeUpEyebrowSelected.png"
-//                unselectImg:@"iconFaceMakeUpEyebrowNormal.png"
-//                title:@""];
-//    }
-//
-//    NSAssert(NO, @"undefined type!!");
-//    return [self initWithType:PLSMakeUpTypeUndefined selectImg:nil unselectImg:nil title:nil];
-//}
++ (instancetype)makeupModelWithType:(PLSMakeUpType)type {
+    if (type == PLSMakeUpTypeBlush) {
+        return [BEButtonItemModel
+                initWithType: type
+                selectImg:@"iconFaceMakeUpBlusherSelected.png"
+                unselectImg:@"iconFaceMakeUpBlusherNormal.png"
+                title:@""];
+    } else if (type == PLSMakeUpTypeLip) {
+        return [BEButtonItemModel
+                initWithType: type
+                selectImg:@"iconFaceMakeUpLipsSelected.png"
+                unselectImg:@"iconFaceMakeUpLipsNormal.png"
+                title:@""];
+    } else if (type == PLSMakeUpTypeFacial) {
+        return [BEButtonItemModel
+                initWithType: type
+                selectImg:@"iconFaceMakeUpFacialSelected.png"
+                unselectImg:@"iconFaceMakeUpFacialNormal.png"
+                title:@""];
+    } else if (type == PLSMakeUpTypePupil) {
+        return [BEButtonItemModel
+                initWithType: type
+                selectImg:@"iconFaceMakeUpPupilSelected.png"
+                unselectImg:@"iconFaceMakeUpPupilNormal.png"
+                title:@""];
+    } else if (type == PLSMakeUpTypeHair) {
+        return [BEButtonItemModel
+                initWithType: type
+                selectImg:@"iconHairSelected.png"
+                unselectImg:@"iconHairNormal.png"
+                title:@""];
+    } else if (type == PLSMakeUpTypeEyeshadow) {
+        return [BEButtonItemModel
+                initWithType: type
+                selectImg:@"iconFaceMakeUpEyeshadowSelected.png"
+                unselectImg:@"iconFaceMakeUpEyeshadowNormal.png"
+                title:@""];
+    } else if (type == PLSMakeUpTypeEyebrow) {
+        return [BEButtonItemModel
+                initWithType: type
+                selectImg:@"iconFaceMakeUpEyebrowSelected.png"
+                unselectImg:@"iconFaceMakeUpEyebrowNormal.png"
+                title:@""];
+    }
+
+    NSAssert(NO, @"undefined type!!");
+    return [self initWithType:PLSMakeUpTypeUndefined selectImg:nil unselectImg:nil title:nil];
+}
 
 + (instancetype)reshapeModelWithInternalKey:(NSString *)internalKey {
     if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_FACEOVERALL]) {
@@ -96,7 +120,7 @@
                 selectImg:@"iconFaceBeautyLiftingSelected.png"
                 unselectImg:@"iconFaceBeautyLiftingNormal.png"
                 title:@""];
-    } /*else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_FACECUT]) {
+    } else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_FACECUT]) {
         return [BEButtonItemModel
                 initWithType:PLSMakeUpTypeReshape
                 selectImg:@"iconBeautyReshapeFaceCutSelect"
@@ -108,13 +132,13 @@
                 selectImg:@"iconBeautyReshapeFaceSmallSelect"
                 unselectImg:@"iconBeautyReshapeFaceSmallNormal"
                 title:@""];
-    }*/ else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_EYE]) {
+    } else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_EYE]) {
         return [BEButtonItemModel
                 initWithType:PLSMakeUpTypeReshape
                 selectImg:@"iconFaceBeautyBigEyeSelected.png"
                 unselectImg:@"iconFaceBeautyBigEyeNormal.png"
                 title:@""];
-    }/* else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_EYEROTATE]) {
+    } else if ([internalKey isEqualToString:PLS_EFFECT_INTERNALKEY_EYEROTATE]) {
         return [BEButtonItemModel
                 initWithType:PLSMakeUpTypeReshape
                 selectImg:@"iconBeautyReshapeEyeRotateSelect"
@@ -167,31 +191,31 @@
                 initWithType:PLSMakeUpTypeReshape
                 selectImg:@"iconBeautyReshapeMouthSmileSelect"
                 unselectImg:@"iconBeautyReshapeMouthSmileNormal"
-                title:@""];}*/
-
+                title:@""];}
+    
     NSAssert(NO, @"undefined key!!");
     return [self initWithType:PLSMakeUpTypeReshape selectImg:nil unselectImg:nil title:nil];
 }
 
-//+ (instancetype)bodyModelWithPath:(NSString *)path {
-//    NSString *name = [path componentsSeparatedByString:@"/"].lastObject;
-//    if ([name isEqualToString:@"longleg"]) {
-//        [BEButtonItemModel
-//         initWithType:PLSMakeUpTypeBody
-//         selectImg:@"iconBeautyBodyThinSelect"
-//         unselectImg:@"iconBeautyBodyThinNormal"
-//         title:@""];
-//    } else if ([name isEqualToString:@"thin"]) {
-//        [BEButtonItemModel
-//         initWithType:PLSMakeUpTypeBody
-//         selectImg:@"iconBeautyBodyThinSelect"
-//         unselectImg:@"iconBeautyBodyThinNormal"
-//         title:@""];
-//    }
-//
-//    NSAssert(NO, @"undefined type!!");
-//    return [self initWithType:PLSMakeUpTypeBody selectImg:nil unselectImg:nil title:nil];
-//}
++ (instancetype)bodyModelWithPath:(NSString *)path {
+    NSString *name = [path componentsSeparatedByString:@"/"].lastObject;
+    if ([name isEqualToString:@"longleg"]) {
+        [BEButtonItemModel
+         initWithType:PLSMakeUpTypeBody
+         selectImg:@"iconBeautyBodyThinSelect"
+         unselectImg:@"iconBeautyBodyThinNormal"
+         title:@""];
+    } else if ([name isEqualToString:@"thin"]) {
+        [BEButtonItemModel
+         initWithType:PLSMakeUpTypeBody
+         selectImg:@"iconBeautyBodyThinSelect"
+         unselectImg:@"iconBeautyBodyThinNormal"
+         title:@""];
+    }
+    
+    NSAssert(NO, @"undefined type!!");
+    return [self initWithType:PLSMakeUpTypeBody selectImg:nil unselectImg:nil title:nil];
+}
 
 + (instancetype)clearModel {
     return [BEButtonItemModel

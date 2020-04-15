@@ -385,8 +385,12 @@ def gen_sticker_list():
         return
     listpath = os.path.join(dirpath, "list.json")
     if os.path.exists(listpath):
-        print("sticker list already exists")
-        return
+        print("sticker list already exists, replace it?(y/n)")
+        conti = input().strip()
+        if conti != 'y':
+            print("skip sticker")
+            return
+    print("gen sticker list...")
     json_obj = []
     for sticker in os.listdir(dirpath):
         tmppath = os.path.join(dirpath, sticker)
@@ -399,7 +403,7 @@ def gen_sticker_list():
                 shutil.copy(icon_path, icon_dst_path)
                 json_obj.append(sticker_dic)
             else:
-                print("unprocessed sticker: ", sticker)
+                print("unprocessed sticker: {}".format(sticker))
     file_handle = open(listpath, 'w+')
     file_handle.write(json.dumps(json_obj, indent=4, ensure_ascii=False))
     file_handle.close()
@@ -413,8 +417,12 @@ def gen_filter_list():
         return
     listpath = os.path.join(dirpath, "list.json")
     if os.path.exists(listpath):
-        print("filter list already exists")
-        return
+        print("filter list already exists, replace it?(y/n)")
+        conti = input().strip()
+        if conti != 'y':
+            print("skip filter")
+            return
+    print("gen filter list...")
     json_obj = []
     for filter in os.listdir(dirpath):
         tmppath = os.path.join(dirpath, filter)
@@ -441,8 +449,12 @@ def gen_makeup_list():
         return
     listpath = os.path.join(dirpath, "list_ios.json")
     if os.path.exists(listpath):
-        print("makeup list already exists")
-        return
+        print("makeup list already exists, replace it?(y/n)")
+        conti = input().strip()
+        if conti != 'y':
+            print("skip makeup")
+            return
+    print("gen makeup list...")
     file_handle = open(listpath, 'w+')
     file_handle.write(makeupListStr)
     file_handle.close()

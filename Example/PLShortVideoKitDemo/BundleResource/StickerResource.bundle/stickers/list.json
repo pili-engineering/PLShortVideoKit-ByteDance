@@ -1,102 +1,102 @@
 [
     {
-        "displayName": "招财猫",
-        "tip": "",
+        "tip": "", 
+        "displayName": "招财猫", 
         "path": "zhaocaimao"
-    },
+    }, 
     {
-        "displayName": "表白七夕",
-        "tip": "比心试试",
+        "tip": "比心试试", 
+        "displayName": "表白七夕", 
         "path": "biaobaiqixi"
-    },
+    }, 
     {
-        "displayName": "绅士",
-        "tip": "",
+        "tip": "", 
+        "displayName": "绅士", 
         "path": "shenshi"
-    },
+    }, 
     {
-        "displayName": "恐龙测试",
-        "tip": "眨眼试试",
+        "tip": "眨眼试试", 
+        "displayName": "恐龙测试", 
         "path": "konglongceshi"
-    },
+    }, 
     {
-        "displayName": "南瓜滚滚",
-        "tip": "",
+        "tip": "", 
+        "displayName": "南瓜滚滚", 
         "path": "nanguagungun"
-    },
+    }, 
     {
-        "displayName": "极简兔耳",
-        "tip": "",
+        "tip": "", 
+        "displayName": "极简兔耳", 
         "path": "jijiantuer"
-    },
+    }, 
     {
-        "displayName": "假面",
-        "tip": "挡脸换面具",
+        "tip": "挡脸换面具", 
+        "displayName": "假面", 
         "path": "jiamian"
-    },
+    }, 
     {
-        "displayName": "公主面具",
-        "tip": "",
+        "tip": "", 
+        "displayName": "公主面具", 
         "path": "gongzhumianju"
-    },
+    }, 
     {
-        "displayName": "恐龙时光机",
-        "tip": "点头",
+        "tip": "点头", 
+        "displayName": "恐龙时光机", 
         "path": "konglongshiguangji"
-    },
+    }, 
     {
-        "displayName": "唤龙术",
-        "tip": "先抬头后张嘴",
+        "tip": "先抬头后张嘴", 
+        "displayName": "唤龙术", 
         "path": "huanlongshu"
-    },
+    }, 
     {
-        "displayName": "好奇龙宝",
-        "tip": "比ok手势",
+        "tip": "比ok手势", 
+        "displayName": "好奇龙宝", 
         "path": "haoqilongbao"
-    },
+    }, 
     {
-        "displayName": "暖暖斗篷",
-        "tip": "嘟嘴",
-        "path": "nuannuandoupeng"
-    },
-    {
-        "displayName": "侏罗纪冒险",
-        "tip": "摇头变身不同恐龙",
+        "tip": "摇头变身不同恐龙", 
+        "displayName": "侏罗纪冒险", 
         "path": "zhuluojimaoxian"
-    },
+    }, 
     {
-        "displayName": "我超甜",
-        "tip": "",
+        "tip": "", 
+        "displayName": "我超甜", 
         "path": "wochaotian"
-    },
+    }, 
     {
-        "displayName": "哈气",
-        "tip": "哈气试试",
+        "tip": "哈气试试", 
+        "displayName": "哈气", 
         "path": "haqi"
-    },
+    }, 
     {
-        "displayName": "卡通男",
-        "tip": "",
+        "tip": "", 
+        "displayName": "卡通男", 
         "path": "katongnan"
-    },
+    }, 
     {
-        "displayName": "蔚蓝冬日妆",
-        "tip": "眨眼嘟嘴",
+        "tip": "眨眼嘟嘴", 
+        "displayName": "蔚蓝冬日妆", 
         "path": "weilandongrizhuang"
-    },
+    }, 
     {
-        "displayName": "黑猫眼镜",
-        "tip": "",
+        "tip": "", 
+        "displayName": "黑猫眼镜", 
         "path": "heimaoyanjing"
-    },
+    }, 
     {
-        "displayName": "蕾丝兔耳",
-        "tip": "",
+        "tip": "", 
+        "displayName": "蕾丝兔耳", 
         "path": "leisituer"
+    }, 
+    {
+        "tip": "", 
+        "displayName": "卡通女", 
+        "path": "katongnv"
     },
     {
-        "displayName": "卡通女",
-        "tip": "",
-        "path": "katongnv"
+        "tip": "嘟嘴",
+        "displayName": "暖暖斗篷",
+        "path": "duanduandoubeng"
     }
 ]

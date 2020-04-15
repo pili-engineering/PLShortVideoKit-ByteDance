@@ -20,8 +20,8 @@
 
 + (instancetype)beautyModelWithInternalKey:(NSString *)internalKey;
 + (instancetype)reshapeModelWithInternalKey:(NSString *)internalKey;
-//+ (instancetype)makeupModelWithType:(PLSMakeUpType)type;
-//+ (instancetype)bodyModelWithPath:(NSString *)path;
++ (instancetype)makeupModelWithType:(PLSMakeUpType)type;
++ (instancetype)bodyModelWithPath:(NSString *)path;
 
 + (instancetype)clearModel;
 

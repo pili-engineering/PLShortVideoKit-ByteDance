@@ -2825,6 +2825,8 @@ BEModernStickerPickerViewDelegate
     self.musicsArray = nil;
     self.videoSpeedArray = nil;
     
+    [PLSEffectManager releaseManager];
+    
     if ([self.activityIndicatorView isAnimating]) {
         [self.activityIndicatorView stopAnimating];
         self.activityIndicatorView = nil;

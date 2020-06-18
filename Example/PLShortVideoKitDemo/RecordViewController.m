@@ -208,7 +208,7 @@ UIGestureRecognizerDelegate
     NSString *rootPath = [[NSBundle mainBundle] resourcePath];
     PLSEffectConfiguration *effectConfiguration = [PLSEffectConfiguration new];
     effectConfiguration.modelFileDirPath = [NSString pathWithComponents:@[rootPath, @"ModelResource.bundle"]];
-    effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"qiniu_20200214_20210213_com.qbox.PLShortVideoKit.ByteDance.Demo_qiniu_v3.4.2.licbag"]];
+    effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"qiniu_20200214_20210213_com.qbox.PLShortVideoKit.ByteDance.Demo_qiniu_v3.9.0.licbag"]];
     _effectDataManager = [[PLSEffectDataManager alloc] initWithRootPath:rootPath];
     
     self.effectManager = [PLSEffectManager sharedWith:[[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2] configuration:effectConfiguration];
@@ -1276,6 +1276,8 @@ UIGestureRecognizerDelegate
     self.alertView = nil;
     
     self.filtersArray = nil;
+    
+    [PLSEffectManager releaseManager];
     
     if ([self.activityIndicatorView isAnimating]) {
         [self.activityIndicatorView stopAnimating];

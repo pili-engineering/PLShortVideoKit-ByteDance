@@ -3,7 +3,6 @@
 #import "BEModernFilterCollectionViewCell.h"
 #import <Masonry/Masonry.h>
 #import "BEEffectResponseModel.h"
-#import <PLShortVideoKit/PLShortVideoKit.h>
 #import <PLSEffect/PLSEffect.h>
 
 static CGFloat const BEModernFilterCellContentPadding = 2.f;

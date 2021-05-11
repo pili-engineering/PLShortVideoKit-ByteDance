@@ -269,7 +269,7 @@ BEModernStickerPickerViewDelegate
 
 - (void)setupEffect {
     NSString *rootPath = [[NSBundle mainBundle] resourcePath];
-    PLSEffectConfiguration *effectConfiguration = [PLSEffectConfiguration new];
+    PLSEffectConfiguration *effectConfiguration = [[PLSEffectConfiguration alloc] initWithModelPath:nil licensePath:nil];
     effectConfiguration.modelFileDirPath = [NSString pathWithComponents:@[rootPath, @"ModelResource.bundle"]];
     effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"qiniu_20210310_20220331_com.qbox.PLShortVideoKit.ByteDance.Demo_v3.9.0.licbag"]];
     _effectDataManager = [[PLSEffectDataManager alloc] initWithRootPath:rootPath];

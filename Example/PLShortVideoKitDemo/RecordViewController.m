@@ -208,7 +208,7 @@ UIGestureRecognizerDelegate
     NSString *rootPath = [[NSBundle mainBundle] resourcePath];
     PLSEffectConfiguration *effectConfiguration = [[PLSEffectConfiguration alloc] initWithModelPath:nil licensePath:nil];
     effectConfiguration.modelFileDirPath = [NSString pathWithComponents:@[rootPath, @"ModelResource.bundle"]];
-    effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"qiniu_20210310_20220331_com.qbox.PLShortVideoKit.ByteDance.Demo_v3.9.0.licbag"]];
+    effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"qiniu_20210310_20221011_com.qbox.PLShortVideoKit.ByteDance.Demo_3.9.0.licbag"]];
     _effectDataManager = [[PLSEffectDataManager alloc] initWithRootPath:rootPath];
     
     self.effectManager = [PLSEffectManager sharedWith:[[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2] configuration:effectConfiguration];
